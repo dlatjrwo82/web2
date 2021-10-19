@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Welcome</title>
   <meta charset="utf-8">
+  <title>html</title>
+  <style media="screen">
+    section{
+      width: 100%;
+      height: 600px;
+      background-color:green;
+    }
+    section .part2 {
+        width:20%;
+        height:600px;
+        float: right;
+        background-color:tan;
+    }
+    aside .check{
+      width:70px;
+      vertical-align:middle;
+    }
+    footer{
+      clear: both;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <br>
-  <h3>WEB</h3>
-  <p><strong>월드와이드웹(WorldWideWeb)</strong>은 세계 최초의 웹 브라우저이자, 위지윅 HTML 편집 프로그램이다. 1991년 2월 26일에 팀 버너스리가 이 프로그램을 처음 소개하였으며 넥스트스텝 플랫폼 위에서 동작한다. 나중에는 월드 와이드 웹의 이름과 충돌을 피하기 위해 넥서스로 이름이 바뀌었다.
-    소스 코드는 1993년에 공용 도메인으로 공개되었기 때문에 자유 소프트웨어가 되었다.[1][2] </p>
+  <header style="background-color:skyblue">
+    <h1><a href="index.html">Fruits</a></h1>
+  </header>
+  <nav style="background-color:greenyellow">
+    <a href="1.html">Apple</a> &nbsp;|&nbsp;
+    <a href="2.html">Orange</a> &nbsp;|&nbsp;
+    <a href="3.html">Grape</a>
+  </nav>
+  <main>
+    <section>
+      <section class="part1" style="float:left; width:80%; height:600px; background-color:lightgoldenrodyellow">
+        <h1>Fruits</h1>
+        <img src="./img/fruits.jpg" width="70%">
+        <br>
+        <p><strong>과일</strong>(영어: fruits) 혹은 과실(果實)은 사람과 동물이 식용하는 열매의 총칭이다.</p>
+        <p style="margin-top:`0px">일반적인 정의는 "나무에서 나는 단맛이 포함된 식용 가능한 열매"다.
+          풀에서 수확하는 열매는 채소, 나무에서 수확하는 열매는 과일로 분류하기도 한다.
+          단맛이 나지 않더라도 아보카도, 올리브는 과일로 보기도 한다.
+          해당 정의에 따르면 "풀에서 나는 식용 가능한 열매"는 엄밀히 말해 과일이 아니다.
+          딸기, 수박, 참외, 바나나 등이 이에 해당하며, 이러한 것들을 '과채류'라는 범주로 따로 분류한다.
+        </p>
+      </section>
+      <aside class="part2">
+        <h3>&nbsp;과일 인터넷 백과사전</h3>
+        <p>당신이 좋아하는 과일은?
+        </p>
+        <form class="check" action="index.html" method="post">
+          <input type="radio" name="fruits" value="apple">사과
+          <input type="radio" name="fruits" value="orange">오렌지
+          <input type="radio" name="fruits" value="grape">포도
+        </form>
+      </aside>
+    </section>
+
+    <!-- <aside style="background-color:lightsalmon">
+      <h1>aside</h1>
+    </aside>
+    <article style="background-color:lightsalmon">
+      <h1>article</h1>
+    </article> -->
+
+  </main>
+
+  <footer style="background-color:plum">
+    <address> 연락처 : <a href="mailto:dlatjrwo@naver.com">dlatjrwo@naver.com</a>.<br> KENNEHT 재단, KOREA </address>
+    <small>ⓒ2021.KENNETH Corp. All Rights Reserved.</small>
+  </footer>
+
+
+
 </body>
 
 </html>
